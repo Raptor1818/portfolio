@@ -141,11 +141,11 @@
     @apply text-2xl font-semibold;
   }
 
-  p,
+  /* p,
   a,
   span {
-    @apply text-lg;
-  }
+    @apply text-base;
+  } */
 
   button:not(:disabled),
   [role="button"]:not(:disabled) {
