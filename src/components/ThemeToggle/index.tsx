@@ -1,6 +1,6 @@
 import { Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes'
-import React, { use, useEffect } from 'react'
+import React from 'react'
 import { Button } from '../ui/button';
 import { cn } from '@/lib/utils';
 

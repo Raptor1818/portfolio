@@ -1,7 +1,6 @@
 import React from 'react'
 import {
   Card,
-  CardAction,
   CardContent,
   CardDescription,
   CardFooter,
@@ -19,10 +18,9 @@ type Props = {
   title: string;
   desc: string;
   tools: string;
-  date: any;
 }
 
-const index = ({ title, desc, tools, date }: Props) => {
+const index = ({ title, desc, tools }: Props) => {
   return (
     <Card className='w-full max-w-2xl border-none hover:bg-secondary transition-colors'>
       <CardHeader>
