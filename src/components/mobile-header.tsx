@@ -30,13 +30,14 @@ export const MobileHeader = ({
       <div className="flex flex-row justify-start pb-2 gap-2">
         <Button
           onClick={() => setIsOpen(!isOpen)}
-          size="icon"
+          size="icon-lg"
           className='border dark:bg-zinc-950 bg-zinc-50'
         >
           {isOpen ? <CgClose className=' dark:text-white text-black' /> : <CgMenu className=' dark:text-white text-black' />}
         </Button>
         <ThemeToggle
           className='dark:bg-zinc-950 bg-zinc-50'
+          size='icon-lg'
           variant={null}
         />
       </div>
@@ -45,7 +46,7 @@ export const MobileHeader = ({
         open={isOpen}
         className={
           isOpen
-            ? 'animate-popover-in flex flex-col gap-3 h-full w-full pt-4 px-4 bg-inherit'
+            ? 'flex flex-col gap-3 h-full w-full pt-4 px-4 bg-inherit'
             : 'hidden'
         }
       >

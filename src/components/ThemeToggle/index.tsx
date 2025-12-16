@@ -6,10 +6,11 @@ import { cn } from '@/lib/utils';
 
 type Props = {
   variant?: 'outline' | 'ghost' | null | undefined;
+  size?: 'icon' | 'icon-sm' | 'icon-lg' | undefined;
   className?: string;
 }
 
-const ThemeToggle = ({ variant, className }: Props) => {
+const ThemeToggle = ({ variant, size, className }: Props) => {
   const { theme, setTheme } = useTheme()
 
   const toggleTheme = () => {
@@ -20,7 +21,7 @@ const ThemeToggle = ({ variant, className }: Props) => {
     <Button
       onClick={toggleTheme}
       variant={variant ?? 'outline'}
-      size={'icon'}
+      size={size ?? 'icon'}
       className={cn(variant === 'ghost' && 'border', className)}
     >
       <Sun color="#000000" className='scale-100 rotate-0 transition-all dark:scale-0 dark:-rotate-90' />
