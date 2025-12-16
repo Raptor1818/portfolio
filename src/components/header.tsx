@@ -1,3 +1,4 @@
+// Based from https://ui.indie-starter.dev/docs/header
 'use client';
 
 import * as React from 'react';
@@ -10,7 +11,7 @@ const headerVariants = cva('mx-auto', {
     variant: {
       default: 'max-w-7xl',
       centered:
-        'max-w-4xl rounded-full mt-2 border shadow-lg dark:border-zinc-900',
+        'max-w-4xl rounded-full mt-2 border shadow-lg dark:border-zinc-900 dark:bg-zinc-950/50 backdrop-blur bg-zinc-50',
     },
   },
   defaultVariants: {
@@ -44,14 +45,14 @@ export const Header = ({
   return (
     <header
       className={cn(
-        'w-full dark:bg-zinc-950/50 backdrop-blur bg-zinc-50',
+        'w-full flex flex-col justify-center z-999',
         sticky && variant == 'centered' && 'md:sticky top-3',
         sticky && variant == 'default' && 'md:sticky top-0'
       )}
     >
       <div className={cn('hidden md:block', headerVariants({ variant }))}>
-        <div className="flex-row-start px-6 pb-2 pt-3 w-full gap-2">
-          <nav className="grow flex-row-end gap-3 lg:gap-8">{desktopItems}</nav>
+        <div className="flex flex-row justify-start px-6 pb-2 pt-3 w-full gap-2">
+          <nav className="flex grow flex-row justify-center items-center gap-3 lg:gap-8">{desktopItems}</nav>
         </div>
       </div>
       <MobileHeader>{mobileItems}</MobileHeader>

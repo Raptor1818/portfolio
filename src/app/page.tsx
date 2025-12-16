@@ -6,9 +6,9 @@ import ProjectSection from "@/components/ProjectSection";
 export default function HomePage() {
   return (
     <>
+      <Navbar></Navbar>
       <main className="flex flex-col gap-12 p-4 md:p-12">
-        <Navbar></Navbar>
-        <HeroSection></HeroSection>
+        <HeroSection />
 
         <ProjectSection></ProjectSection>
 
@@ -19,7 +19,7 @@ export default function HomePage() {
       </main>
 
       {/* Contacts */}
-      <footer>
+      <footer id="about">
 
       </footer>
     </>

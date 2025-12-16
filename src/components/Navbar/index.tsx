@@ -1,29 +1,18 @@
+// Based from https://ui.indie-starter.dev/docs/header
 'use client';
-import { FaXTwitter } from 'react-icons/fa6';
-import { FaGithub } from 'react-icons/fa';
+
 import { Header } from '@/components/header';
 import { Button } from '@/components/ui/button';
-import Link from 'next/link';
+import ThemeToggle from '../ThemeToggle';
 
 const headerLinks = [
   { name: 'Home', href: '#home' },
   { name: 'Projects', href: '#projects' },
   { name: 'About', href: '#about' },
 ];
-const icons = [
-  {
-    name: 'Twitter',
-    icon: <FaXTwitter size="14" />,
-    href: 'https://x.com',
-  },
-  {
-    name: 'GitHub',
-    icon: <FaGithub size="14" />,
-    href: 'https://github.com',
-  },
-];
+
 const HeaderLink = (props: { href: string; name: string }) => {
-  return <Link href={props.href}>{props.name}</Link>;
+  return <a href={props.href}>{props.name}</a>;
 };
 export const Navbar = () => (
   <Header
@@ -34,6 +23,7 @@ export const Navbar = () => (
         {headerLinks.map((link, i) => (
           <HeaderLink key={i} href={link.href} name={link.name} />
         ))}
+        <ThemeToggle variant='ghost'></ThemeToggle>
       </>
     }
     mobileItems={({ setIsOpen }) => (
@@ -47,10 +37,10 @@ export const Navbar = () => (
             size="lg"
             onClick={() => setIsOpen(false)}
           >
-            <Link href={link.href}>{link.name}</Link>
+            <a href={link.href}>{link.name}</a>
           </Button>
         ))}
-        <div className="flex-row-end w-full gap-3 border-t pt-4 border-dashed">
+        {/* <div className="flex-row-end w-full gap-3 border-t pt-4 border-dashed">
           {icons && (
             <div className="flex-row-center grow gap-2">
               {icons.map((icon) => (
@@ -67,7 +57,7 @@ export const Navbar = () => (
               ))}
             </div>
           )}
-        </div>
+        </div> */}
       </>
     )}
   />
