@@ -12,7 +12,7 @@ type Props = {
 const VariableLinkButton = ({ link, variant }: Props) => {
   return (
     <Button variant={variant} asChild>
-      <Link href={link}>
+      <Link href={link} target="_blank" rel="noopener noreferrer">
         {
           variant === 'itch' &&
           <>

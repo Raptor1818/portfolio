@@ -24,7 +24,8 @@ const ProjectCard = ({ title, desc, tools, linkButton, img }: ProjectType) => {
             src={img}
             fill
             alt={title}
-            className='object-contain rounded-lg'
+            draggable={false}
+            className='object-contain rounded-lg select-none'
           />
         </AspectRatio>
         <CardTitle className='text-xl'>{title}</CardTitle>
@@ -35,7 +36,7 @@ const ProjectCard = ({ title, desc, tools, linkButton, img }: ProjectType) => {
         <p>{desc}</p>
       </CardContent>
 
-      <CardFooter>
+      <CardFooter className='flex flex-row gap-4'>
         {linkButton}
       </CardFooter>
     </Card>
