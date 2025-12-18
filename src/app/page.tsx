@@ -1,3 +1,4 @@
+import AboutSection from "@/components/AboutSection";
 import HeroSection from "@/components/HeroSection";
 import { Navbar } from "@/components/Navbar";
 import ProjectSection from "@/components/ProjectSection";
@@ -18,10 +19,7 @@ export default function HomePage() {
         </div>
       </main>
 
-      {/* Contacts */}
-      <footer id="about">
-
-      </footer>
+      <AboutSection />
     </>
   );
 }

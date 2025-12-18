@@ -146,6 +146,10 @@
     @apply text-xl md:text-3xl font-semibold;
   }
 
+  a {
+    @apply text-blue-400 hover:underline;
+  }
+
   /* p,
   a,
   span {
