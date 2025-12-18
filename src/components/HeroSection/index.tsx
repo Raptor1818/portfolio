@@ -3,6 +3,7 @@ import React from 'react'
 import { Button } from "@/components/ui/button";
 import { Download, ExternalLink } from "lucide-react";
 import { FaItchIo, FaGithub } from "react-icons/fa6";
+import Link from 'next/link';
 
 type Props = {}
 
@@ -15,9 +16,22 @@ const index = (_props: Props) => {
           <h2>🇮🇹 · Game Dev · Web Dev</h2>
         </div>
         <div className="w-full flex flex-row justify-center gap-2">
-          <Button variant="download">Resume <Download /></Button>
-          <Button variant="github"><FaGithub /> Github <ExternalLink /></Button>
-          <Button variant="itch"><FaItchIo />Itch.io <ExternalLink /></Button>
+          <Button variant="download">
+            {/* TODO (add asChild   ^)*/}
+            {/* <Link href="" download={"resume"}>  */}
+            Resume <Download />
+            {/* </Link> */}
+          </Button>
+          <Button variant="github" asChild>
+            <Link href="https://github.com/Raptor1818" target='_blank' rel="noopener noreferrer">
+              <FaGithub />Github <ExternalLink />
+            </Link>
+          </Button>
+          <Button variant="itch" asChild>
+            <Link href="https://raptor1818.itch.io/" target='_blank' rel="noopener noreferrer">
+              <FaItchIo />Itch.io <ExternalLink />
+            </Link>
+          </Button>
         </div>
       </div>
     </div>
