@@ -23,6 +23,7 @@ const buttonVariants = cva(
         download: "bg-white text-black border border-zinc-200 hover:bg-zinc-300",
         github: "bg-[#24292e] text-white hover:bg-[#24292e]/70",
         itch: "bg-[#FA5C5C] text-white hover:bg-[#FA5C5C]/70",
+        website: "bg-[#FFA500] text-white hover:bg-[#FFA500]/70",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",

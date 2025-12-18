@@ -7,10 +7,10 @@ export default function HomePage() {
   return (
     <>
       <Navbar></Navbar>
-      <main className="flex flex-col gap-12 p-4 md:p-12">
+      <main className="flex flex-col p-4 md:p-12">
         <HeroSection />
 
-        <ProjectSection></ProjectSection>
+        <ProjectSection />
 
         {/* Skills */}
         <div>
