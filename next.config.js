@@ -5,6 +5,11 @@
 import "./src/env.js";
 
 /** @type {import("next").NextConfig} */
-const config = {};
+const config = {
+  allowedDevOrigins: ['devving.raptorino.com'],
+  images: {
+    remotePatterns: [new URL('https://img.itch.zone/**')],
+  },
+};
 
 export default config;
