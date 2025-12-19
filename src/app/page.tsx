@@ -19,9 +19,9 @@ export default function HomePage() {
       </main>
 
       {/* Contacts */}
-      <footer id="about">
+      {/* <footer id="about">
 
-      </footer>
+      </footer> */}
     </>
   );
 }

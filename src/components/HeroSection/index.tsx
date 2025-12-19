@@ -16,12 +16,12 @@ const index = (_props: Props) => {
           <h2>🇮🇹 · Game Dev · Web Dev</h2>
         </div>
         <div className="w-full flex flex-row justify-center gap-2">
-          <Button variant="download">
+          {/* <Button variant="download">
             {/* TODO (add asChild   ^)*/}
-            {/* <Link href="" download={"resume"}>  */}
-            Resume <Download />
-            {/* </Link> */}
-          </Button>
+          {/* <Link href="" download={"resume"}>  */}
+          {/* Resume <Download /> */}
+          {/* </Link> */}
+          {/* </Button> */}
           <Button variant="github" asChild>
             <Link href="https://github.com/Raptor1818" target='_blank' rel="noopener noreferrer">
               <FaGithub />Github <ExternalLink />

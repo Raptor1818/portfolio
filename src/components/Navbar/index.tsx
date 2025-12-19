@@ -8,7 +8,7 @@ import ThemeToggle from '../ThemeToggle';
 const headerLinks = [
   { name: 'Home', href: '#home' },
   { name: 'Projects', href: '#projects' },
-  { name: 'About', href: '#about' },
+  // { name: 'About', href: '#about' },
 ];
 
 const HeaderLink = (props: { href: string; name: string }) => {
