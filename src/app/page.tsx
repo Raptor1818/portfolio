@@ -9,19 +9,8 @@ export default function HomePage() {
       <Navbar></Navbar>
       <main className="flex flex-col p-4 md:p-12">
         <HeroSection />
-
         <ProjectSection />
-
-        {/* Skills */}
-        <div>
-
-        </div>
       </main>
-
-      {/* Contacts */}
-      {/* <footer id="about">
-
-      </footer> */}
     </>
   );
 }
