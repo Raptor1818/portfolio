@@ -49,12 +49,23 @@ export const WebProjectList: ProjectType[] = [
     id: 1,
     title: "RaptorOS",
     desc: "My personal website made to resemble a desktop enviroment.",
-    tools: "Next.js, TailwindCSS",
+    tools: "Next.js, TailwindCSS, self-hosted",
     linkButton:
       <>
         <VariableLinkButton link="https://os.raptorino.com/" variant="website" />
         <VariableLinkButton link="https://github.com/Raptor1818/RaptorOS" variant="github" />
       </>,
     img: "/img/projects/raptoros.webp"
+  },
+  {
+    id: 2,
+    title: "Cruise Pro Website",
+    desc: "Website made for Cruise Pro Allestimenti s.r.l.",
+    tools: "Next.js, TailwindCSS, self-hosted",
+    linkButton:
+      <>
+        <VariableLinkButton link="https://cruisepro.design/" variant="website" />
+      </>,
+    img: "/img/projects/cruisepro.webp"
   },
 ]
