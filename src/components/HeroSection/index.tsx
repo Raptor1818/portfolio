@@ -38,7 +38,6 @@ const index = (_props: Props) => {
           <svg className="w-5 h-5 mx-auto mt-1 text-gray-400" viewBox="0 0 24 24">
             <path d="M12 16l-6-6h12z" fill="currentColor" />
           </svg>
-
         </div>
       </div>
     </div>
